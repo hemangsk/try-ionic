@@ -5,14 +5,19 @@ angular.module('coala.services', [])
   this.get = function() {
     var dfd = $q.defer();
 
-    $http.get('bears.json')
+    $http.get('http://webservices.coala.io/list/bears')
     .success(function(data) {
       dfd.resolve(data);
     })
     .error(function(data) {
-      dfd.reject(data);
+      $http.get('bear.json')
+      .success(function (data_err) {
+        dfd.resolve(data_err)
+      })
+      .error(function (data_err) {
+        dfd.reject(data_err);
+      })
     });
-
     return dfd.promise;
   };
 })
