@@ -1,6 +1,10 @@
 <p align="center"><h1 align="center">try-ionic</h1></p>
 <p align="center">Ionic App powered by coala.io webServices</p>
 
+<img src="screenshots/1.png" width=150 align="left"/>
+<img src="screenshots/1.png" width=150 align="center"/>
+<img src="screenshots/2.png" width=150 align="right"/>
+
 #### Running locally
 ```
 $ npm install -g cordova ionic
