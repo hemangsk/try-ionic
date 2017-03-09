@@ -1,0 +1,15 @@
+<ion-view class="agenda-view">
+  <ion-nav-title>
+    <span>Bears</span>
+  </ion-nav-title>
+  <ion-content>
+    <div class="card bear-card" ng-repeat="(key,bear) in bears">
+      <div class="bearName">
+        {{key}}
+      </div>
+      <div class="bearDesc">
+        {{bear.desc}}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
